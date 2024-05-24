@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>무적태풍전사</title>
+    <style>
+      #image-container {
+        position: relative;
+        width: 100vw; /* 이미지 너비에 맞게 조정 */
+      }
+
+      #image {
+        width: 100vw;
+        height: auto;
+      }
+
+      .sector {
+        position: absolute;
+        cursor: pointer;
+      }
+
+      .sector:nth-child(1) {
+        background-color: blue;
+        opacity: 0.5;
+      }
+
+      .sector:nth-child(2) {
+        background-color: red;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="image-container">
+      <!-- 오디오를 재생할 이미지 -->
+      <img src="/assets/img/excel.png" alt="Image" id="image" />
+
+      <div id="image-sectors">
+        <!-- 각 섹터의 좌표와 오디오 파일을 추가합니다. -->
+        <div
+          class="sector"
+          data-sector="1"
+          data-audio="/assets/mp3/audio1.mp3"
+          style="left: 0; top: 0; width: 50vw; height: 50vh"
+        ></div>
+        <div
+          class="sector"
+          data-sector="2"
+          data-audio="/assets/mp3/audio2.mp3"
+          style="left: 50vw; top: 0; width: 50vw; height: 50vh"
+        ></div>
+        <!-- 필요한 만큼 섹터를 추가 -->
+      </div>
+    </div>
+
+    <audio id="audioPlayer"></audio>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // 각 섹터 요소들을 가져옵니다.
+        var sectors = document.querySelectorAll('.sector');
+
+        // 오디오 요소를 가져옵니다.
+        var audioPlayer = document.getElementById('audioPlayer');
+
+        // 각 섹터에 클릭 이벤트 리스너를 추가합니다.
+        sectors.forEach(function (sector) {
+          sector.addEventListener('click', function () {
+            // 클릭한 섹터의 오디오 파일 경로를 가져옵니다.
+            var audioSrc = this.getAttribute('data-audio');
+
+            // 이전에 재생 중이던 오디오를 일시 정지합니다.
+            audioPlayer.pause();
+
+            // 새로운 오디오를 재생합니다.
+            audioPlayer.src = audioSrc;
+            audioPlayer.play();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
