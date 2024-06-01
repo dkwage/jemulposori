@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Pretendard;
+}
+
 #image-container {
   position: relative;
   width: 100vw; /* 이미지 너비에 맞게 조정 */
@@ -47,4 +53,20 @@
 .sector:nth-child(7) {
   background-color: orange;
   opacity: 0;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.modal-body {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
