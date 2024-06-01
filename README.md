@@ -11,6 +11,7 @@
 <li>오디오 재생 중 다른 div 클릭 시 기존 오디오 중단 및 신규 오디오 재생</li>
 </ul>
 
+<h3>패치노트</h3>
 <h4>Ver1.0 - 06.01.24</h4>
 <ul>
 <li>Conatainer position relative로 만든 후 이미지 1920*1080으로 세팅 후 postion absolute로 특정 위치에 div 고정
