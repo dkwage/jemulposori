@@ -70,3 +70,9 @@
   display: flex;
   flex-direction: column;
 }
+
+.modal-body img {
+  width: 1450px;
+  height: 800px;
+  margin: 0 auto;
+}
