@@ -8,17 +8,15 @@
     <meta property="og:title" content="제물포소리 프로젝트" />
     <meta property="og:description" content="지역사회와 디자인" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+
     <script src="./js/script.js"></script>
   </head>
   <body>
@@ -29,43 +27,57 @@
       <div id="image-sectors">
         <!-- 각 섹터의 좌표와 오디오 파일을 추가합니다. -->
         <div
-          class="sector"
+          class="sector btn btn-primary"
+          data-toggle="modal"
+          data-target="#modal1"
           data-sector="1"
           data-audio="/assets/mp3/1.mp3"
           style="left: 236px; top: 230px; width: 70px; height: 70px"
         ></div>
         <div
-          class="sector"
+          class="sector btn btn-primary"
+          data-toggle="modal"
+          data-target="#modal2"
           data-sector="2"
           data-audio="/assets/mp3/2.mp3"
           style="left: 620px; top: 293px; width: 70px; height: 70px"
         ></div>
         <div
-          class="sector"
+          class="sector btn btn-primary"
+          data-toggle="modal"
+          data-target="#modal3"
           data-sector="3"
           data-audio="/assets/mp3/3.mp3"
           style="left: 895px; top: 533px; width: 70px; height: 70px"
         ></div>
         <div
-          class="sector"
+          class="sector btn btn-primary"
+          data-toggle="modal"
+          data-target="#modal4"
           data-sector="4"
           data-audio="/assets/mp3/4.mp3"
           style="left: 768px; top: 673px; width: 70px; height: 70px"
         ></div>
         <div
-          class="sector"
+          class="sector btn btn-primary"
+          data-toggle="modal"
+          data-target="#modal5"
           data-sector="5"
           data-audio="/assets/mp3/5.mp3"
           style="left: 988px; top: 802px; width: 70px; height: 70px"
         ></div>
         <div
-          class="sector"
+          class="sector btn btn-primary"
+          data-toggle="modal"
+          data-target="#modal6"
           data-sector="6"
           data-audio="/assets/mp3/6.mp3"
           style="left: 1355px; top: 743px; width: 70px; height: 70px"
         ></div>
         <div
-          class="sector"
+          class="sector btn btn-primary"
+          data-toggle="modal"
+          data-target="#modal7"
           data-sector="7"
           data-audio="/assets/mp3/7.mp3"
           style="left: 1527px; top: 836px; width: 70px; height: 70px"
@@ -74,29 +86,19 @@
         <!-- 필요한 만큼 섹터를 추가 -->
       </div>
     </div>
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-toggle="modal"
-      data-target="#exampleModalLong"
-    >
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
+    <!--모달 1-->
     <div
       class="modal fade"
-      id="exampleModalLong"
+      id="modal1"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="exampleModalLongTitle"
+      aria-labelledby="modalTitle"
       aria-hidden="true"
     >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <h5 class="modal-title" id="modalTitle">제목1</h5>
             <button
               type="button"
               class="close"
@@ -106,16 +108,266 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            nulla impedit modi id similique odit accusantium. Voluptatibus
+            dolore consequatur veritatis. Iusto asperiores odit expedita optio
+            deserunt ipsam quaerat id modi.
+          </div>
           <div class="modal-footer">
             <button
               type="button"
               class="btn btn-secondary"
               data-dismiss="modal"
             >
-              Close
+              닫기
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--모달 2-->
+    <div
+      class="modal fade"
+      id="modal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">제목2</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            nulla impedit modi id similique odit accusantium. Voluptatibus
+            dolore consequatur veritatis. Iusto asperiores odit expedita optio
+            deserunt ipsam quaerat id modi.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--모달 3-->
+    <div
+      class="modal fade"
+      id="modal3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">제목3</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            nulla impedit modi id similique odit accusantium. Voluptatibus
+            dolore consequatur veritatis. Iusto asperiores odit expedita optio
+            deserunt ipsam quaerat id modi.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--모달 4-->
+    <div
+      class="modal fade"
+      id="modal4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">제목4</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            nulla impedit modi id similique odit accusantium. Voluptatibus
+            dolore consequatur veritatis. Iusto asperiores odit expedita optio
+            deserunt ipsam quaerat id modi.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--모달 5-->
+    <div
+      class="modal fade"
+      id="modal5"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">제목5</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            nulla impedit modi id similique odit accusantium. Voluptatibus
+            dolore consequatur veritatis. Iusto asperiores odit expedita optio
+            deserunt ipsam quaerat id modi.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--모달 6-->
+    <div
+      class="modal fade"
+      id="modal6"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">제목6</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            nulla impedit modi id similique odit accusantium. Voluptatibus
+            dolore consequatur veritatis. Iusto asperiores odit expedita optio
+            deserunt ipsam quaerat id modi.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--모달 7-->
+    <div
+      class="modal fade"
+      id="modal7"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">제목7</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            nulla impedit modi id similique odit accusantium. Voluptatibus
+            dolore consequatur veritatis. Iusto asperiores odit expedita optio
+            deserunt ipsam quaerat id modi.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              닫기
+            </button>
           </div>
         </div>
       </div>
