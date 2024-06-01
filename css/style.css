@@ -1,0 +1,50 @@
+#image-container {
+  position: relative;
+  width: 100vw; /* 이미지 너비에 맞게 조정 */
+}
+
+#image {
+  width: 1920px;
+  height: 1080px;
+}
+
+.sector {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 70px;
+}
+
+.sector:nth-child(1) {
+  background-color: blue;
+  opacity: 0.5;
+}
+
+.sector:nth-child(2) {
+  background-color: red;
+  opacity: 0.5;
+}
+
+.sector:nth-child(3) {
+  background-color: green;
+  opacity: 0.5;
+}
+
+.sector:nth-child(4) {
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+.sector:nth-child(5) {
+  background-color: purple;
+  opacity: 0.5;
+}
+
+.sector:nth-child(6) {
+  background-color: pink;
+  opacity: 0.5;
+}
+
+.sector:nth-child(7) {
+  background-color: orange;
+  opacity: 0.5;
+}
