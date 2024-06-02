@@ -31,4 +31,5 @@
 <li>제목 및 설명 beta ver 추가
 <li>modal-body p 마진 추가
 <li>modal-footer button 크기 수정
+<li>modal-footer button 클릭 시 오디오 재생 중지
 </ul>

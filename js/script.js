@@ -19,6 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
       audioPlayer.play();
     });
   });
+
+  // 클래스가 ".btn.btn-secondary"인 버튼들에 클릭 이벤트 리스너를 추가합니다.
+  var secondaryButtons = document.querySelectorAll(".btn.btn-secondary");
+  secondaryButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      audioPlayer.pause();
+      audioPlayer.currentTime = 0;
+    });
+  });
 });
 
 $("#myModal").on("shown.bs.modal", function () {
