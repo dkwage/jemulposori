@@ -25,3 +25,10 @@
 <li>fullsize modal 적용
 <li>modal content background opacity 80% 적용 -> rgba 사용
 </ul>
+
+<h4>Ver1.0.2 - 06.02.24</h4>
+<ul>
+<li>제목 및 설명 beta ver 추가
+<li>modal-body p 마진 추가
+<li>modal-footer button 크기 수정
+</ul>

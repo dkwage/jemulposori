@@ -71,8 +71,18 @@
   flex-direction: column;
 }
 
+.modal-body p {
+  margin: 1%;
+  padding: 1%;
+}
+
 .modal-body img {
   width: 1800px;
   height: 800px;
   margin: 0 auto;
+}
+
+.modal-footer button {
+  font-size: 1.6rem;
+  margin-right: 2%;
 }
