@@ -33,3 +33,8 @@
 <li>modal-footer button 크기 수정
 <li>modal-footer button 클릭 시 오디오 재생 중지
 </ul>
+
+<h4>Ver1.0.3 - 06.03.24</h4>
+<ul>
+<li>modal-body img 및 설명 업데이트
+</ul>
