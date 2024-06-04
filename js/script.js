@@ -33,3 +33,22 @@ document.addEventListener("DOMContentLoaded", function () {
 $("#myModal").on("shown.bs.modal", function () {
   $("#myInput").trigger("focus");
 });
+
+$(document).ready(function () {
+  $(".sector.btn.btn-primary").hover(
+    function () {
+      // Get the sector number from the data-sector attribute
+      var sectorNumber = $(this).data("sector");
+
+      // Hide all hover images
+      $(".hoverContainer img").hide();
+
+      // Show the hover image corresponding to the sector number
+      $(".hover-image" + sectorNumber).show();
+    },
+    function () {
+      // Hide all hover images when the mouse leaves the sector
+      $(".hoverContainer img").hide();
+    }
+  );
+});
