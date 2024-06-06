@@ -43,3 +43,10 @@
 <ul>
 <li>hover 시 가려져 있던 이미지 생성되는 기능 추가
 </ul>
+
+<h4>Ver1.1.0 - 06.06.24</h4>
+<ul>
+<li>map final ver release
+<li>modify sector's location 
+<li>modify popup's location
+</ul>
