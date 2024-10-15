@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Pretendard", Arial, Helvetica, sans-serif;
+  background-color: #151519;
+  color: white;
+}
+
+#navbar_links_5 {
+  color: white;
+}
+
+.container {
+  position: relative;
+  margin-top: 15% !important;
+  width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 992px) {
+  .container {
+    position: relative;
+    margin-top: 40% !important;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.form-container {
+  background-color: #1e1e24;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.footer_container {
+  margin-top: 0% !important;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #2b2b2b;
+  border-radius: 5px;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #fcaa30;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fcaa30;
+}
+
+.box {
+  width: 100%;
+  margin-top: 8vw; /* Add margin-top to create space below the header */
+  position: relative; /* Add relative positioning to the parent container */
+}
+/**사진**/
+.slide {
+  height: auto;
+  overflow: hidden; /**이미지는 내장이라 overflow:hidden을 사용해 넘친 사진들을 안보이게 한다.**/
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-90%) scale(80%);
+  z-index: 1;
+}
+.images {
+  display: flex; /**좌우 슬라이드를 위해 flex로 사진을 가로정렬한다.**/
+  height: auto;
+  transition: transform 0.5s;
+  /**어떤 속성에 대해 애니메이션 효과를 주는 속성이다. 
+tranform속성에 0.5초의 듀레이션(동작의 시작해서 끝나는 시간)을 준다.**/
+}
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/**버튼위치**/
+.button-box {
+  position: relative;
+  left: 35%;
+}
+.back {
+  position: relative;
+  margin-top: 2%;
+  transform: scale(50%);
+  z-index: 1;
+  font-family: Pretendard;
+  font-size: 3vw; /* Adjusted for desktop */
+  font-weight: 600;
+  color: white;
+}
+.next {
+  position: relative;
+  margin-top: 2%;
+  transform: scale(50%);
+  z-index: 1;
+  font-family: Pretendard;
+  font-size: 3vw; /* Adjusted for desktop */
+  font-weight: 600;
+  color: white;
+}
+
+/**버튼디자인**/
+button {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 100%;
+  color: white;
+  background: black;
+}
+
+.main-container-1 {
+  position: absolute;
+  padding: 10%;
+  top: -5.5vw;
+  left: 50%;
+  transform: translateX(-10%); /* Center horizontally */
+  z-index: 1;
+}
+
+.top-text-wrapper {
+  text-align: left;
+  width: 130%;
+}
+
+.large-text {
+  margin-bottom: 2vw; /* Adjusted for desktop */
+  font-family: Pretendard;
+  font-size: 3vw; /* Adjusted for desktop */
+  font-weight: 600;
+  color: white;
+}
+
+.small-text-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  gap: 2.5vw; /* Adjusted for desktop */
+}
+
+.description {
+  font-family: Pretendard;
+  font-size: 2vw; /* Adjusted for desktop */
+  font-weight: 500;
+  color: white;
+  flex: 1;
+  word-break: keep-all;
+}
+
+.back:active,
+.next:active {
+  /** 버튼을 클릭하는 동안 색을 바꾼다. **/
+  background: #3e3e3e !important;
+}
+
+.back:disabled,
+.next:disabled {
+  /** 버튼 속성이 disabled되면 색을 바꾼다. **/
+  background: #cbcaca !important;
+}

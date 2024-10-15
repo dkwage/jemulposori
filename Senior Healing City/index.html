@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Senior Healing City" />
+    <meta property="og:description" content="우리 시니어에게 딱 맞춘 도시" />
+    <meta property="og:image" content="/apple-touch-icon.png" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#151519"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#151519"
+    />
+
+    <title>Senior Healing City</title>
+    <script src="./js/includeHTML.js"></script>
+    <script defer src="../js/slide.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style-sticky.css" />
+    <link rel="stylesheet" href="./css/style-index.css" />
+    <script type="module" src="./js/sticky.js"></script>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-FE18K1WJYF"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-FE18K1WJYF");
+  </script>
+  <body>
+    <header data-include-path="./assets/html/header.html"></header>
+    <main>
+      <article class="sticky-container" id="sticky-container">
+        <div class="sticky">
+          <div class="slide-container">
+            <div class="slide" id="slide1">
+              <div class="slide-big-text">
+                <p>몸도 마음도 건강하게</p>
+                <br />
+                <p>Senior Healing City</p>
+              </div>
+            </div>
+            <div id="scroll-down">
+              <div class="scroll-down-text">아래로 스크롤하세요.</div>
+            </div>
+            <div class="slide" id="slide2">
+              <div class="slide-big-text">
+                <img src="./assets/img/메인.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="div introduce_container">
+        <div class="slide-big-text">
+          <p>'우리 시니어에게 딱 맞는 도시'</p>
+
+          <p class="smText">
+            Senior Healing City는 치매 및 우울증을 겪고 있는 노인들을 위해
+            설계된 스마트 치유 도시입니다.<br />
+            스마트 도우미 '솔리'와 함께 다양한 프로그램과 시설, 평안한 생활을
+            돕겠습니다.
+          </p>
+        </div>
+      </div>
+      <div class="solly_container">
+        <img src="./assets/img/solly.jpg" class="solly" />
+        <div class="top-text-wrapper">
+          <p class="large-text">안녕하세요, 스마트 도우미 솔리입니다!</p>
+          <div class="small-text-container">
+            <p class="description">
+              다양한 문제를 해결해주는 로봇이라는 의미로, Solution에서 따온
+              이름이래요.<br />
+              도시에 거주하시는 분 모두 솔리가 도와드립니다!<br />
+              AI와 감정 인식 기술을 결합한 로봇으로, 노인의 감정 상태와 신체
+              상태를 인식해 적합한 대화와 도움을 제공합니다.<br />
+              일상 생활의 보조뿐만 아니라 정서적 교감도 함께하며 노인의 기억과
+              감정을 자극해 소통을 촉진합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <footer data-include-path="./assets/html/footer.html"></footer> -->
+  </body>
+  <script src="./js/menu.js"></script>
+</html>

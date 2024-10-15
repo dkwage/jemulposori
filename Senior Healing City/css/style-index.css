@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.slide-big-text p {
+  white-space: nowrap;
+  display: inline;
+}
+
+body {
+  font-family: "Pretendard", Arial, Helvetica, sans-serif;
+  background-color: #151519;
+  color: white;
+}
+
+#navbar_links_1 {
+  color: white;
+}
+
+.container {
+  position: relative;
+  margin-top: 15% !important;
+  width: 90%;
+  margin: auto;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .slide-big-text p {
+    font-size: 5rem;
+  }
+
+  .smText {
+    font-size: 2rem !important;
+    font-weight: 500 !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    position: relative;
+    margin-top: 40% !important;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.form-container {
+  background-color: #1e1e24;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.footer_container {
+  margin-top: 0% !important;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #2b2b2b;
+  border-radius: 5px;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #fcaa30;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fcaa30;
+}
+
+.introduce_container {
+  margin-top: 20%;
+}
+
+.solly_container {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  text-align: center; /* Center text within the container */
+  gap: 100px;
+}
+
+.solly {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20%;
+}
+
+.top-text-wrapper {
+  margin-top: 20px; /* Add some space above the text */
+}
+
+.large-text {
+  font-size: 3em; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Add some space below the large text */
+  font-weight: 700;
+  word-break: keep-all;
+  margin-bottom: 10%;
+}
+
+.small-text-container {
+  max-width: 800px; /* Limit the width of the text container */
+}
+
+.description {
+  font-size: 1.5em; /* Adjust font size as needed */
+  line-height: 1.5; /* Improve readability */
+  word-break: keep-all;
+  text-align: left;
+}
+
+.img_container {
+  display: flex;
+  justify-content: space-around; /* Distribute space evenly */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Wrap items if needed */
+}
+
+.img_text_wrapper {
+  display: flex;
+  flex-direction: column; /* Arrange image and text in a column */
+  align-items: center; /* Center items horizontally */
+  margin: 10px; /* Add some space around each item */
+}
+
+.img_text_wrapper img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.img_text_wrapper p {
+  margin-top: 10px; /* Add some space above the text */
+  text-align: center; /* Center the text */
+}
