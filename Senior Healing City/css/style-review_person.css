@@ -192,6 +192,11 @@ button {
 }
 .review_container {
   margin-top: 10%;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 30px;
+  justify-content: center;
 }
 
 .img_container {
@@ -207,4 +212,7 @@ button {
   margin-top: 10%;
   font-size: 2rem;
   font-weight: 600;
+}
+.description {
+  font-size: 1.2rem;
 }
